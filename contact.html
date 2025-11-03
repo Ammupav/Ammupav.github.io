@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Pavithra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1f2937',
+                        secondary: '#3b82f6',
+                        accent: '#10b981',
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="bg-gray-900 text-white font-sans">
+    <!-- Header (Optional, for navigation back to portfolio) -->
+    <header class="bg-gray-800 shadow-lg">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-blue-400">Pavithra M</div>
+            <a href="index.html" class="text-blue-400 hover:text-blue-300">Back to Portfolio</a>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section class="py-20 bg-gray-800 min-h-screen flex items-center justify-center">
+        <div class="container mx-auto px-6 text-center max-w-2xl">
+            <h1 class="text-4xl md:text-5xl font-bold mb-6 text-blue-400">Contact Me</h1>
+            <p class="text-lg mb-10 text-gray-300">I'd love to hear from you! Fill out the form below or reach out via social media.</p>
+            
+            <!-- Contact Form -->
+            <form id="contact-form" class="bg-gray-700 rounded-lg p-8 shadow-lg space-y-6">
+                <div>
+                    <label for="name" class="block text-left text-gray-300 mb-2">Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" class="w-full p-4 bg-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div>
+                    <label for="email" class="block text-left text-gray-300 mb-2">Email *</label>
+                    <input type="email" id="email" name="email" placeholder="your.email@example.com" class="w-full p-4 bg-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <div>
+                    <label for="message" class="block text-left text-gray-300 mb-2">Message *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Your message here..." class="w-full p-4 bg-gray-600 rounded-lg text-white focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+                </div>
+                <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 px-6 py-3 rounded-lg text-lg font-semibold transition">Send Message</button>
+            </form>
+            
+            <!-- Social Media Links -->
+            <div class="mt-10">
+                <p class="text-gray-300 mb-4">Or connect with me on:</p>
+                 <div class="mt-10">
+        <div class="flex justify-center space-x-6">
+            <a href="mailto:pavithra2001madhu@gmail.com" class="text-blue-400 hover:text-blue-300 text-2xl"><i class="fas fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/pavithra-m-85121819b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-blue-400 hover:text-blue-300 text-2xl"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/Ammupav" class="text-gray-400 hover:text-gray-300 text-2xl"><i class="fab fa-github"></i></a>
+        </div>
+    </div>
+</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6 text-center">
+        <p>&copy; All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Simple Form Submission (Placeholder - Replace with actual backend like EmailJS or Netlify Forms)
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! Your message has been sent. (This is a placeholder - integrate with a real service.)');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
